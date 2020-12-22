@@ -1,0 +1,65 @@
+@import '../../../custom-style.scss';
+
+.food-element {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid $primary;
+
+
+    img {
+        width: 150px;
+        height: 150px;
+        border: 5px solid $primary;
+    }
+    .food-details {
+        padding: 10px 25px;
+        padding-bottom: 0;
+        height: 150px;
+        width: 85%;
+        h4 {
+            font-weight: 700;
+            letter-spacing: 1.3px;
+
+        }
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            letter-spacing: 1px;
+            padding-top: 5px;
+            margin: 0;
+            height: 50px;
+            overflow: hidden;
+        }
+        .feature {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            .time, .serve {
+                @extend .center-center;
+                justify-content: flex-start;
+                padding-right: 50px;
+                p {
+                    @extend .center-center;
+                    justify-content: flex-start;
+                    margin: 0;
+                    padding: 0 10px;
+                }
+                .fas {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+    .price {
+        width: 15%;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: end;
+    }
+}

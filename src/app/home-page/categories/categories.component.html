@@ -1,0 +1,7 @@
+
+<div class="category-container" (click)="onSelectFoodType()">
+    <div class="category-element" [ngClass] = "{ 'marginTop': isHomePage, 'marginNone': !isHomePage }">
+        <img [src]="category.src" alt="" class="img-fluid icon">
+        <h3>{{category.title}}</h3>
+    </div>
+</div>

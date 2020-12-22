@@ -1,0 +1,15 @@
+@import '../../custom-style.scss';
+
+header{
+    background: url('../../assets/header-bg.jpg') center center;
+    @extend .center-center;
+    .navbar-brand {
+        @include heading-style;
+        font-size: 35px;
+        line-height: 50px;
+        letter-spacing: 5px;
+        padding: 20px 0;
+        cursor: pointer;
+
+    }
+}

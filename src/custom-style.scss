@@ -1,0 +1,27 @@
+$body-color: #212529;
+$primary: lightgrey;
+$secondary: green;
+$light-color: #fff;
+$dark-color: #000;
+//======================================================
+
+@mixin tlrb-0 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+@mixin heading-style {
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    color: $light-color;
+
+}
+//========================================================
+
+.center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
