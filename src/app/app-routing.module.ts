@@ -8,11 +8,8 @@ import { FoodContainerComponent } from './food-container/food-container.componen
 import { FoodElementComponent } from './food-container/food-element/food-element.component';
 
 const routes: Routes = [
-  { path: 'header', component: HeaderComponent },
   { path: '', component: HomePageComponent },
-  { path: 'categories', component: CategoriesComponent },
   { path: 'FoodContainer', component: FoodContainerComponent },
-  { path: 'foodElement', component: FoodElementComponent },
 
   { path: '**', redirectTo: ''}
 ];
