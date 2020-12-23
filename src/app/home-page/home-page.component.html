@@ -1,11 +1,11 @@
 <section class="home-page">
-    <h1><span>F</span>oodi<span>e</span></h1>
+    <h1>Foodie</h1>
     <p>Beautiful Place <span> | </span> Beautiful Food</p>
 </section>
 <section class="categories">
     <div class="container">
         <div class="row">
-            <div class="col-md-4" *ngFor = "let element of categoryElements">
+            <div class="col-sm-4" *ngFor = "let element of categoryElements">
                 <app-categories [categoryElement] = "element" [origin] = "isHomePage" (click) = "navigate(element)"></app-categories>
             </div>
         </div>

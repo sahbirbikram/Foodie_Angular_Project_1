@@ -32,7 +32,7 @@
             letter-spacing: 1px;
             padding-top: 5px;
             margin: 0;
-            height: 50px;
+            height: 70px;
             overflow: hidden;
         }
         .feature {
@@ -49,6 +49,7 @@
                     justify-content: flex-start;
                     margin: 0;
                     padding: 0 10px;
+                    height: 30px;
                 }
                 .fas {
                     color: $secondary;
@@ -61,5 +62,63 @@
         font-size: 20px;
         font-weight: 700;
         text-align: end;
+    }
+    @media screen and (max-width: 992px) {
+        margin-right:75px;
+        margin-left: 75px;
+        img {
+            width: 120px;
+            height: 120px;
+        }
+        .food-details {
+            height: 120px;
+            width: 80%;
+            border: 1px solid red;
+            h4 {
+                font-size: 20px;
+                margin: 0;
+            }
+            p {
+                font-size: 12px;
+                height: 57px;
+            }
+            .feature {   
+                border: 1px solid blue; 
+                .time, .serve {
+                    padding-right: 25px;
+                    p {
+                        height: 25px;
+                        border: 1px solid green;
+                    }
+                }
+            }
+        }
+        .price {
+            width: 20%;
+        } 
+    }
+    @media screen and (max-width: 767px) {
+        margin-right:0;
+        margin-left: 0;
+    }
+    @media screen and (max-width: 575px) {
+        margin-right:0;
+        margin-left: 0;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        .food-details {
+            height: 100px;
+            width: 80%;
+            border: 1px solid red;
+            h4 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 11px;
+                height: 40px;
+            }
+        } 
     }
 }

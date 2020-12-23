@@ -1,13 +1,13 @@
 <div class="container-fluid">
     <div class="row top-padding">
-        <div class="col-md-3">
+        <div class="col-lg-3">
             <div class=" single-element sticky-top">
                 <div *ngFor="let element of categoryElements">
                     <app-categories [categoryElement] = "element" [origin] = "isHomePage" (foodType)="onFoodTypeSelected($event)"></app-categories>
                 </div>    
             </div>
         </div>
-        <div class="col-md-9">
+        <div class="col-lg-9">
             <app-food-element *ngFor = "let food of foods" [food] = "food"></app-food-element>
         </div>
     </div>
